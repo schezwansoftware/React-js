@@ -1,0 +1,35 @@
+{
+  "name": "react-js-basics",
+  "version": "1.0.0",
+  "description": "basics of reactjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schezwansoftware/React-js.git"
+  },
+  "keywords": [
+    "react",
+    "basics"
+  ],
+  "author": "Harshit Bhatt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/schezwansoftware/React-js/issues"
+  },
+  "homepage": "https://github.com/schezwansoftware/React-js#readme",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "webpack": "^4.1.1",
+    "webpack-dev-server": "^3.1.0"
+  }
+}
