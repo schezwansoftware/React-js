@@ -1,30 +1,28 @@
-var path=require("path");
 
-//to copy transcribed files
-var DIST_DIR=path.resolve(__dirname,"dist");
-//to get untranscribed files
-var SRC_DIR=path.resolve(__dirname,"src");
+var path = require("path");
 
-var config={
-    entry  : SRC_DIR +  "/app/index.js",
-    output : {
-        path : DIST_DIR + "/app",
+var DIST_DIR = path.resolve(__dirname, "dist");
+var SRC_DIR = path.resolve(__dirname, "src");
+
+var config = {
+    entry: SRC_DIR + "/app/index.js",
+    output: {
+        path: DIST_DIR + "/app/",
         filename: "bundle.js",
-        publicPath: "/app"
+        publicPath: "/app/"
     },
-    module :{
-        loaders : [
+    module: {
+        loaders: [
             {
-                test : /\.js?/,
+                test: /\.js?/,
                 include: SRC_DIR,
                 loader: "babel-loader",
                 query: {
-                    presets: ["react","es2015","stage-2"]
+                    presets: ["react", "es2015", "stage-2"]
                 }
             }
         ]
     }
-
 };
 
-module.exports=config;
+module.exports = config;
