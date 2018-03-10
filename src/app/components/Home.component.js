@@ -12,10 +12,19 @@ export class HomeComponent extends React.Component{
                 <div>
                     <h4> Hobbies </h4>
                     <ul>
-                        {vm.user.hobbies.map((hobby) => <li> {hobby} </li>)}
+                        {vm.user.hobbies.map((hobby,i) => <li key={i}> {hobby} </li>)}
                     </ul>
                 </div>
+
+                <hr/>
+                {vm.children}
             </div>
         );
     }
 }
+
+HomeComponent.propTypes={
+    name:React.PropTypes.string,
+    lastname:React.PropTypes.string,
+    user:React.PropTypes.object
+};
