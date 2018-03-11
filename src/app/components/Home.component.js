@@ -8,6 +8,12 @@ export class HomeComponent extends React.Component{
             status:0,
             name:props.name
         };
+
+        setTimeout(()=> this.setState(
+            {
+                status:this.state.status+1
+            }
+            ),3000)
     }
 
     onClick(){
@@ -20,7 +26,7 @@ export class HomeComponent extends React.Component{
     render(){
         return(
             <div>
-                <p>In a New COmponent!!</p>
+                <p>In a New Component!!</p>
                 <p>Your Name is : {this.state.name} , your age is {this.state.age} </p>
                 <p>Status: {this.state.status}</p>
                 <button onClick={this.onClick.bind(this)} className="btn btn-primary">Make Me Older!</button>
