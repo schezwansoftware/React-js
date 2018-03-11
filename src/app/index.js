@@ -19,9 +19,7 @@ class App extends React.Component {
                 </div>
                 <div className="row">
                     <div className="col-xs-10 col-xs-offset-1">
-                        <HomeComponent name={'Harshit'} lastname={'Bhatt'} address={'Jammu'} user={user}>
-                        <p>This is passed as HTML from Index</p>
-                        </HomeComponent>
+                        <HomeComponent name={'Harshit'} initialAge={22} />
                     </div>
                 </div>
             </div>
